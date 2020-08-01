@@ -1,0 +1,120 @@
+:root {
+    --border-radius: 10px;
+}
+
+body {
+    min-width: 450px;
+}
+
+.life-cycles, .mixed-cards {
+    margin: 0 auto;
+    display: flex;
+}
+
+.life-cycles {
+    max-width: 660px;
+}
+.metamorphosis-container {
+    flex: 1;
+}
+.metamorphosis-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.metamorphosis-slots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mixed-cards {
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 150px;
+    border: 4px dashed transparent;
+}
+
+.card-slot {
+    min-height: 100px;
+    min-width: 130px;
+    background: #eee;
+    border: 4px solid #cdcdcd;
+    border-radius: 10px;
+}
+
+.card-slot:empty {
+    /*This only works if the tag is really empty and there is not even whitespace inside*/
+    border: 4px solid #cdcdcd;
+    margin: 2px;
+    border-radius: var(--border-radius);
+}
+
+.card {
+    margin: 14px;
+}
+
+.card > img {
+    display: block;
+    width: 200px;
+    box-shadow: 0 0 0 8px #86989B;
+    border-radius: var(--border-radius);
+}
+
+.dragged {
+    opacity: 50%;
+}
+
+.active {
+    background: lightblue;
+}
+
+.over {
+    background: cadetblue;
+}
+
+.dropped > img {
+    border: none;
+    height: 105px;
+    width: 130px;
+    border-radius: var(--border-radius);
+}
+
+.desk-active{
+    background: yellowgreen;
+}
+
+.desk-over {
+    background: limegreen;
+}
+
+.winbox {
+    width: 60%;
+    margin: 10px 20%;
+    background-color: darkgreen;
+    color: #eeeeee;
+    font-size: 300%;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.new-game {
+    width: 20%;
+    margin: 10px 40%;
+    background: white;
+    color: black;
+    border-radius: 6px;
+    text-align: center;
+    border: solid 0.25em black;
+    font-weight: bold;
+}
+
+.new-game a{
+    text-decoration: none;
+}
+
+.new-game a:visited{
+    color: black;
+}
